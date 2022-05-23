@@ -18,6 +18,23 @@
   color: var(--primary-font-color);
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #11171a;
+  border-radius: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
 .mainContainer {
   background-color: inherit;
   width: 100%;
@@ -47,6 +64,35 @@
 }
 
 /**********************************************************************************/
+
+
+
+/****************************NAVBAR MENU****************************/
+.menuMobile {
+  width: 100%; 
+  height: 100vh;
+  background: rgba(0,0,0,0.7); 
+  position: absolute; 
+  top: 10%;
+  transition: all ease 500ms; 
+  transform: translateX(-500px)
+}
+.menuMobileOpen {
+  transition: all ease 500ms;
+  transform: translateX(0);
+  position: fixed;
+  z-index: 500;
+  overflow: hidden;
+}
+.menuContent {
+  background: var(--primary-bg);
+  height: 100%; 
+  width: 70%; 
+  padding: 1rem;
+}
+
+/**********************************************************************************/
+
 
 
 /****************************HEADER****************************/
@@ -177,58 +223,71 @@ main .cardsGrid {
           height: 260px;
           width: 200px;
           border-radius: 25px;
-          background-image: url("./assets/images/pexels-andrea.webp");
-          background-size: cover;
-          background-repeat: no-repeat;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position:relative;
          }
   .div2TopC { grid-area: 1 / 2 / 4 / 3; 
     background-color: var(--primary-loading);
     height: 400px;
     width: 200px;
     border-radius: 25px;
-    background-image: url("./assets/images/pexels-mali-maeder-101635.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
   }
   .div3TopR { grid-area: 1 / 3 / 3 / 4;
   background-color: var(--primary-loading);
   height: 260px;
   width: 200px;
   border-radius: 25px;
-  background-image: url("./assets/images/pexels-yuki-ghost-1193895.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: 30%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
 }
   .div1 { grid-area: 1 / 1 / 3 / 2;
           background-color: var(--primary-loading);
           height: 260px;
           width: 200px;
           border-radius: 25px;
-          background-image: url("./assets/images/pexels-pixabay-248307.webp");
-          background-size: cover;
-          background-repeat: no-repeat;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position:relative;
          }
   .div2 { grid-area: 1 / 2 / 4 / 3; 
     background-color: var(--primary-loading);
     height: 400px;
     width: 200px;
     border-radius: 25px;
-    background-image: url("./assets/images/vertical-angle-dog.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+  } 
+  .cardsGrid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .div3 { grid-area: 1 / 3 / 3 / 4;
   background-color: var(--primary-loading);
   height: 260px;
   width: 200px;
   border-radius: 25px;
-  background-image: url("./assets/images/pexels-sebastian-coman-travel-3590443.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
 }
 .divBtnGradient {
   background: linear-gradient(0deg, #FAFAFC 59.48%, rgba(250, 250, 252, 0) 101.58%, rgba(250, 250, 252, 0) 203.09%);
@@ -241,7 +300,62 @@ main .cardsGrid {
 }
 
 /**********************************************************************************/
+.processContainer {
+  width: 100%;
+  min-height: 500px;
+  background-color: var(--footer-bg);
+  border-top-right-radius: 40%;
+  padding: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+}
+.processContent {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+}
+ .processContent > span {
+   padding: 0.5rem 1rem;
+   background-color: #36363652;
+   color: var(--primary-font-color);
+   font-weight: bold;
+   border-radius: 20px;
+ }
+ .processContent > h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 42px;
+  color: var(--primary-font-color);
+  background: inherit;
+  font-weight: 900;
+}
+.processContent > p {
+  color: var(--primary-font-color);
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+}
 
+.processCard {
+  margin-top: 2rem;
+  width: 300px;
+  height: 360px;
+  border-radius: 32px;
+  background-color: var(--primary-loading);
+}
+
+
+/*******************************PROCESS SECTION*************************************/
+
+
+
+/**********************************************************************************/
 
 
 /****************************FOOTER****************************/
@@ -266,6 +380,7 @@ footer > ul > li {
   font-weight: 700;
   font-size: 24px;
   padding-bottom: 2rem;
+  cursor: pointer;
 }
 
 .liSocial {
@@ -281,9 +396,43 @@ footer > ul > li {
   height: 32px;
   cursor: pointer;
   transition: color ease 300ms;
-} 
-.socialIcons:hover {
-  color: green;
+  background-color: inherit;
+}
+
+/**********************************************************************************/
+
+
+
+/*************************SPINNER LOADING******************************************/
+.spinnerContainer {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 500;
+}
+.spinner {
+  width:50px; 
+  height:50px; 
+  border: 5px solid var(--primary-red); 
+  border-left: 5px solid transparent;
+  margin: auto; 
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  background-color: inherit;
+  }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    }
 }
 
 /**********************************************************************************/
