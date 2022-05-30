@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const MenuMobile = ({isOpen}) => {
 
   return (
     <>
         {isOpen &&
-            <div className={`menuMobile ${isOpen ? 'menuMobileOpen' : ''}`}>
+            <div className={`menuMobile  ${isOpen && 'menuMobileOpen'}`}>
                 <div className='menuContent'>
                     MenuMobile
                 </div>

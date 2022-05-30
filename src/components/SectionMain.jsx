@@ -22,19 +22,19 @@ const loadComplete = ()=>{
             <span>mascota</span>
         </div>
         <div className='cardsGrid parent' style={{paddingBottom: "2rem"}}>
-            <div className='div1TopL'>
+            <div className='div1'>
               {!loaded &&
                 <SpinnerLoad />
               } 
               <img src={divT1} alt="Dog picture" />
             </div>
-            <div className='div2TopC'>
+            <div className='div2'>
               {!loaded &&
                 <SpinnerLoad />
               } 
               <img src={divT2} onLoad={loadComplete} alt="Dog picture" />
             </div>
-            <div className='div3TopR'>
+            <div className='div3'>
               {!loaded &&
                 <SpinnerLoad />
               } 

@@ -1,7 +1,10 @@
 import { useState } from "react"
 import './App.css'
+import Ayuda from "./components/Ayuda"
 import Footer from './components/Footer'
+import GridHugSection from "./components/GridHugSection"
 import Header from './components/Header'
+import HogarTransito from "./components/HogarTransito"
 import MenuMobile from './components/MenuMobile'
 import Navbar from './components/Navbar'
 import Process from "./components/Process"
@@ -20,6 +23,9 @@ const menuAction = ()=>{
       <Header />
       <SectionMain />
       <Process />
+      <HogarTransito />
+      <Ayuda />
+      <GridHugSection />
       <Footer />
 
       <MenuMobile isOpen={isOpen} />
