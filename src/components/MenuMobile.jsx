@@ -7,7 +7,12 @@ const MenuMobile = ({isOpen}) => {
         {isOpen &&
             <div className={`menuMobile  ${isOpen && 'menuMobileOpen'}`}>
                 <div className='menuContent'>
-                    MenuMobile
+                    <ul>
+                      <li>Inicio</li>
+                      <li>Proceso</li>
+                      <li>Hogar de tránsito</li>
+                      <li>Nuestra historia</li>
+                    </ul>
                 </div>
             </div>
         }
