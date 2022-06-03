@@ -20,25 +20,25 @@ const SectionMain = () => {
             <div className='div1'>
               <LazyLoadImage
                 src={divT1} alt="Dog picture"
-                height= "260px"
-                width= "200px"
-                effect = "blur" 
+                height="260px"
+                width="200px"
+                effect="blur" 
               />
             </div>
             <div className='div2'>
               <LazyLoadImage
                 src={divT2} alt="Dog picture" 
-                height= "400px"
-                width= "200px"
-                effect = "blur" 
+                height="400px"
+                width="200px"
+                effect="blur" 
               />
             </div>
             <div className='div3'> 
               <LazyLoadImage
                 src={divT3} alt="Dog picture"
-                height= "260px"
-                width= "200px"
-                effect = "blur" 
+                height="260px"
+                width="200px"
+                effect="blur" 
               />
             </div>
         </div>
@@ -47,25 +47,25 @@ const SectionMain = () => {
             <div className='div1'>
               <LazyLoadImage
                 src={divB1} alt="Dog picture"
-                height= "260px"
-                width= "200px"
-                effect = "blur" 
+                height="260px"
+                width="200px"
+                effect="blur" 
               />
             </div>
             <div className='div2'>
               <LazyLoadImage
                 src={divB2} alt="Dog picture" 
-                height= "400px"
-                width= "200px"
-                effect = "blur" 
+                height="400px"
+                width="200px"
+                effect="blur" 
               />
             </div>
             <div className='div3'>
               <LazyLoadImage
                 src={divB3} alt="Dog picture"
-                height= "260px"
-                width= "200px"
-                effect = "blur" 
+                height="260px"
+                width="200px"
+                effect="blur" 
               />
             </div>
         </div>
